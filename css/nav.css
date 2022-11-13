@@ -1,0 +1,31 @@
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A0BCC2;
+}
+
+.nav-logo {
+    width: 194px;
+    margin-left: 1rem;
+}
+
+.nav-menu {
+    margin-right: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 5rem;
+}
+  
+.nav-link {
+    display: block; 
+    color: #4D4D4D;
+}
+
+.nav-link:hover {
+    color: #FEFBE7;
+    transition: 0.5s;
+}

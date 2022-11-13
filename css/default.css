@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+img {
+    max-width: 100%; /*이미지보다 창 크기가 작아져도 이미지를 다 유지하면서 축소하자*/
+    height: auto;
+}
