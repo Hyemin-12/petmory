@@ -1,0 +1,49 @@
+main {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+hr {
+    width: 380px;
+    margin-top: 10px;
+}
+
+#post-button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #A0BCC2;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.938rem;
+    cursor: pointer;
+}
+
+.container {
+    background-color: white;
+    width: 1180px;
+    height: 600px;
+    margin-top: 10px;
+}
+
+#post-table {
+    width: 1180px;
+    border-top: 2px solid #4D4D4D;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #4D4D4D;
+    padding: 10px;
+    color: #4D4D4D;
+}
