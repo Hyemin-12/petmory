@@ -10,7 +10,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="./css/community.css">
+    <link rel="stylesheet" href="./css/genPost.css">
     <title>커뮤니티 게시글 작성</title>
 </head>
 <body>
@@ -37,6 +37,29 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="title-container">
+            <div class="title">Posting</div>
+            <hr>
+        </div>
+        <div class="posting-container">
+            <input class="input-title" type="text" placeholder="제목을 입력하세요.">
+            <textarea class="input-content" placeholder="게시글 내용을 입력하세요."></textarea>
+        </div>
+        <div class="button-container">
+            <div class="image-upload-container">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="upload-button">
+                        <label for="input-file">사진 첨부</label>
+                    </div>
+                    <input type="file" id="input-file" accept="image/*" onchange="loadFile(this)"/>
+                </form>
+                <p id="file-name"></p>
+            </div>
+            <a href="./community.html"><button class="complete-button">작성 완료</button></a>
+        </div>
+    </main>
+    <script src="./js/image-upload.js"></script>
     <script>feather.replace()</script>
 </body>
 </html>
