@@ -28,3 +28,25 @@ hr {
     width: 380px;
     margin-top: 10px;
 }
+
+.container {
+    background-color: white;
+    width: 1180px;
+    height: 600px;
+    margin-top: 10px;
+}
+
+/******* PET SHOW *******/
+#pet-show-page {
+    display: block;
+}
+
+/*** ANIMAL HOSPITAL ***/
+#animal-hospital-page {
+    display: none;
+}
+
+/*** ABANDONED ANIMAL ***/
+#abandoned-animal-page {
+    display: none;
+}
