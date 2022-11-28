@@ -6,6 +6,10 @@ nav {
     background-color: #A0BCC2;
 }
 
+.nav-toggle {
+    display: none;
+}
+
 .nav-toggle i {
     font-size: 2rem;
     color: #FEFBE7;
