@@ -19,6 +19,9 @@ hr {
 }
 
 #post-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 40px;
     margin-top: 20px;
@@ -27,6 +30,12 @@ hr {
     border-radius: 10px;
     font-size: 0.938rem;
     cursor: pointer;
+}
+
+.bxs-edit-alt {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: #4D4D4D;
 }
 
 .container {
