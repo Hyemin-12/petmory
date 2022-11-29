@@ -30,15 +30,28 @@ hr {
 }
 
 .container {
-    background-color: white;
-    width: 1180px;
-    height: 600px;
-    margin-top: 10px;
+    background-color: #FEFBE7;
+    max-width: 1080px;
+    margin-top: 40px;
+    margin-bottom: 200px;
 }
 
 /******* PET SHOW *******/
 #pet-show-page {
     display: block;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 40px;
+}
+
+.post-container img { 
+    width: 280px;
+    height: 400px;
+    cursor: pointer;
 }
 
 /*** ANIMAL HOSPITAL ***/
