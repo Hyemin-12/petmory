@@ -1,5 +1,5 @@
 nav {
-    height: 50px;
+    height: 53px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,7 @@ nav {
 }
 
 /*** mobile ***/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .nav-toggle {
         display: block;
         position: absolute;
