@@ -11,6 +11,38 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/genPost.css">
+
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js" charset = "UTF-8"></script>
+    <link
+    rel="stylesheet"
+    href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(function () {
+    $("#datepicker").datepicker({ dateFormat: "yy-mm-dd" });
+    });
+    </script>
+    <script>
+        $.datepicker.setDefaults({
+        dateFormat: 'yy-mm-dd',
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년'
+    });
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+    </script>
     <title>게시글 작성</title>
 </head>
 <body>
@@ -43,12 +75,13 @@
 
     <div class="genPost-container">
         <div class="genPost-ds">
-            <div class="genPost-date"><p class="genPost-date-p">22.22.22</p><i class='bx bx-calendar-alt' ></i></div>
+            <div class="genPost-date"><input type="text" id="datepicker"><i class='bx bx-calendar-alt' ></i></div>
             <a href="./index.html"><div class="genPost-share">공유하기</div></a>
         </div>
         <div class="genPost-img"><img src="./img/post.jpg"></div>
         <div class="genPost-txt"><textarea class="genPost-txt-ta" rows="5" cols="50" placeholder="내용을 입력하세요."></textarea></div>
     </div>
     <script src="./js/nav.js"></script>
+    <script src="./js/genPost.js"></script>
 </body>
 </html>

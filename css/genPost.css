@@ -23,7 +23,10 @@
     margin-left: 2%;
     color: #4D4D4D;
 }
-.genPost-date-p {
+#datepicker {
+    width: 100px;
+    border: none;
+    outline: none;
     display: inline-block;
     border-radius: 0.75rem;
     padding: 5px 15px;
