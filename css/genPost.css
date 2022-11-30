@@ -39,8 +39,9 @@
     display: inline-block;
     border-radius: 0.75rem;
     padding: 5px 15px;
-    margin-right: 2%;
+    margin-right: 5%;
     background-color: #A0BCC2;
+    word-break: keep-all;
 }
 .genPost-img {
     width: 400px;
