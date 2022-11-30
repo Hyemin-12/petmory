@@ -11,25 +11,36 @@
     align-items: center;
     padding: 5%;
 }
-.genPost-date {
+.genPost-ds {
     width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.genPost-date {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-left: 2%;
     color: #4D4D4D;
 }
 .genPost-date-p {
     display: inline-block;
     border-radius: 0.75rem;
     padding: 5px 15px;
-    margin-left: 5%;
     background-color: #A0BCC2;
 }
 .genPost-date i {
     font-size: 150%;
-    margin-left: 2%;
+    margin-left: 3%;
     color: #4D4D4D;
     cursor: pointer;
+}
+.genPost-share {
+    display: inline-block;
+    border-radius: 0.75rem;
+    padding: 5px 15px;
+    margin-right: 2%;
+    background-color: #A0BCC2;
 }
 .genPost-img {
     width: 400px;
