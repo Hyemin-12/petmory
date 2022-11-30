@@ -5,6 +5,7 @@ main {
 
 .title-container {
     margin-top: 100px;
+    margin-left: 30px;
 }
 
 .title {
@@ -19,10 +20,13 @@ hr {
 .posting-container {
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
+    margin: 30px;
+    margin-top: 20px;
 }
 
 .input-title {
-    margin-top: 20px;
+    max-width: 95vw;
     height: 50px;
     font-size: 1.25rem;
     border: 1px solid #4D4D4D;
@@ -31,6 +35,7 @@ hr {
 }
 
 .input-content {
+    max-width: 95vw;
     margin-top: 10px;
     height: 450px;
     font-size: 1.25rem;
@@ -42,6 +47,7 @@ hr {
 
 .button-container {
     margin-top: 20px;
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
 }
