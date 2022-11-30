@@ -36,6 +36,7 @@ input {
     border-radius: 10px;
     background-color: #A0BCC2;
     color: white;
+    cursor: pointer;
 }
 
 .sub-menu {
