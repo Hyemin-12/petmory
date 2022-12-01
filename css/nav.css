@@ -4,6 +4,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #A0BCC2;
+    z-index: 100;
 }
 
 .nav-toggle {

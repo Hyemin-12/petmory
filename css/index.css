@@ -28,6 +28,7 @@ html, body {
     height: 170px;
     border-radius: 50%;
     position: relative;
+    z-index: -100;
 }
 .main-user-img img {
     position: absolute;
