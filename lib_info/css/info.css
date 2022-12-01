@@ -1,5 +1,5 @@
 main {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ hr {
 
 /**** PET SHOW INFO ****/
 #pet-show-info {
-    display: block;
+    visibility: hidden;
     position: relative;
     z-index: 100;
     top: -1100px;
@@ -99,20 +99,11 @@ hr {
     background-color: #DAE5D0;
 }
 
-.map-container {
-    width: 100%;
-}
-
 .info-container {
     padding: 10px;
 }
 
 /*** ANIMAL HOSPITAL ***/
 #animal-hospital-page {
-    display: none;
-}
-
-/*** ABANDONED ANIMAL ***/
-#abandoned-animal-page {
     display: none;
 }

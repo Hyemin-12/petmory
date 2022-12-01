@@ -30,10 +30,10 @@ const selectedOnChange = () => {
 
 // 포스트 클릭 시 팝업 띄우는 함수
 const openInfoPopup = () => {
-    document.getElementById('pet-show-info').style.display = 'block';
+    document.getElementById('pet-show-info').style.visibility = 'visible';
 }
 
 // 팝업에서 X 클릭 시 창 닫히는 함수
 const closeInfoPopup = () => {
-    document.getElementById('pet-show-info').style.display = 'none';
+    document.getElementById('pet-show-info').style.visibility = 'hidden';
 }
