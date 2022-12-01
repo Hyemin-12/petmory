@@ -25,7 +25,7 @@ geocoder.addressSearch('서울 강남구 남부순환로 3104', function(result,
         console.log("검색 성공")
         console.log(result)
 
-        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+        var coords = new kakao.maps.LatLng(result[0].x, result[0].y);
         console.log(coords)
 
         // 결과값으로 받은 위치를 마커로 표시합니다
