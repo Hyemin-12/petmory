@@ -57,6 +57,54 @@ hr {
     cursor: pointer;
 }
 
+/**** PET SHOW INFO ****/
+#pet-show-info {
+    position: relative;
+    z-index: 100;
+    top: -1100px;
+    margin: 0 auto;
+    max-width: 880px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4D4D4D;
+    background-color: white;
+}
+
+.bx-x {
+    font-size: 3rem;
+    color: #4D4D4D;
+    margin: 10px;
+    align-self: flex-end;
+}
+
+.info-title {
+    margin: 0 40px;
+    color: #4D4D4D;
+}
+
+.content-container {
+    display: flex;
+    margin: 0 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DAE5D0;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.map-img {
+    width: 100%;
+}
+
+.info-container {
+    padding: 10px;
+}
+
 /*** ANIMAL HOSPITAL ***/
 #animal-hospital-page {
     display: none;
