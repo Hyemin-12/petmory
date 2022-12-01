@@ -16,15 +16,12 @@ const selectedOnChange = () => {
     if (option === "Pet Show" ) {
         document.getElementById('pet-show-page').style.display = 'block';
         document.getElementById('animal-hospital-page').style.display = 'none';
-        document.getElementById('abandoned-animal-page').style.display = 'none';
     } else if (option === "Animal Hospital") {
         document.getElementById('pet-show-page').style.display = 'none';
         document.getElementById('animal-hospital-page').style.display = 'block';
-        document.getElementById('abandoned-animal-page').style.display = 'none';
     } else if (option === "Abandoned Animal") {
         document.getElementById('pet-show-page').style.display = 'none';
         document.getElementById('animal-hospital-page').style.display = 'none';
-        document.getElementById('abandoned-animal-page').style.display = 'block';
     }
 }
 
