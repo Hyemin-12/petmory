@@ -59,7 +59,7 @@ hr {
 
 /**** PET SHOW INFO ****/
 #pet-show-info {
-    display: none;
+    display: block;
     position: relative;
     z-index: 100;
     top: -1100px;
