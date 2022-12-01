@@ -29,4 +29,5 @@ var infowindow = new kakao.maps.InfoWindow({
 // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
 infowindow.open(map, marker); 
 
-map.relayout();
+if (document.getElementById('pet-show-info').style.display === 'block')
+    map.relayout();
