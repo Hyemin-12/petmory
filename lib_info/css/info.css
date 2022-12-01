@@ -59,14 +59,19 @@ hr {
 
 /**** PET SHOW INFO ****/
 #pet-show-info {
+    display: none;
     position: relative;
     z-index: 100;
     top: -1100px;
     margin: 0 auto;
+}
+
+#pet-show-info .container{
     max-width: 880px;
     height: 600px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     border: 1px solid #4D4D4D;
     background-color: white;
 }
@@ -76,6 +81,7 @@ hr {
     color: #4D4D4D;
     margin: 10px;
     align-self: flex-end;
+    cursor: pointer;
 }
 
 .info-title {
