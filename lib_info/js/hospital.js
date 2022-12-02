@@ -1,4 +1,3 @@
-
 // AJAX(Asynchronous JavaScript And XML)로 url 호출하기
 const getNameByAPI = (url) => {
     // XMLHttpRequest 만들기
@@ -23,18 +22,33 @@ const getNameByAPI = (url) => {
     xhr.send();
 }
 
+var count = 4;
 const show = (jsonString) => {
     // jsonString -> JSON
     let json = JSON.parse(jsonString); // JSON.stringify() : JSON -> String
-    console.log(json["LOCALDATA_020301"]["list_total_count"])
-    for (let i = 0; i < json["LOCALDATA_020301"]["list_total_count"]; i++) {
+    var addContent = document.createElement("div");
+    addContent.classList.add("box")
+    for (let i = count; i < 30; i++) {
         if (json["LOCALDATA_020301"]["row"][i]["TRDSTATENM"] === "영업/정상") {
-            console.log(json["LOCALDATA_020301"]["row"][i]["BPLCNM"])
+            addContent.innerHTML = json["LOCALDATA_020301"]["row"][i]["BPLCNM"];
+            document.querySelector('#animal-hospital-page').appendChild(addContent);
+            count++;
+            break;
+        } else {
+            count++;
+            break;
         }
     }
 }
 
 const KEY = "4a484c627368796534315173486349";
-let url = `http://openapi.seoul.go.kr:8088/${KEY}/json/LOCALDATA_020301/1/100/`;
+const url = `http://openapi.seoul.go.kr:8088/${KEY}/json/LOCALDATA_020301/1/30/`;
 console.log(url);
-getNameByAPI(url);
+
+window.onscroll = function(e) {
+    if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
+        setTimeout(function(){
+            getNameByAPI(url);
+        }, 1000)  
+    }
+}

@@ -19,9 +19,7 @@ const selectedOnChange = () => {
     } else if (option === "Animal Hospital") {
         document.getElementById('pet-show-page').style.display = 'none';
         document.getElementById('animal-hospital-page').style.display = 'block';
-    } else if (option === "Abandoned Animal") {
-        document.getElementById('pet-show-page').style.display = 'none';
-        document.getElementById('animal-hospital-page').style.display = 'none';
+        document.getElementById('pet-show-info').style.visibility = 'hidden';
     }
 }
 

@@ -120,6 +120,11 @@ hr {
     display: none;
 }
 
+.box {
+    width: 100%;
+    height: 500px;
+}
+
 /*** tablet ***/
 @media screen and (max-width: 1160px) {
     #pet-show-info {
