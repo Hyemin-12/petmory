@@ -27,10 +27,17 @@ const show = (jsonString) => {
     // jsonString -> JSON
     let json = JSON.parse(jsonString); // JSON.stringify() : JSON -> String
     var addContent = document.createElement("div");
-    addContent.classList.add("box")
+    addContent.classList.add("box");
+    var hName = document.createElement("div");
+    hName.classList.add("hospital-name");
+    var hLoc = document.createElement("div");
+    hLoc.classList.add("hospital-loc");
     for (let i = count; i < 30; i++) {
         if (json["LOCALDATA_020301"]["row"][i]["TRDSTATENM"] === "영업/정상") {
-            addContent.innerHTML = json["LOCALDATA_020301"]["row"][i]["BPLCNM"];
+            hName.innerHTML = json["LOCALDATA_020301"]["row"][i]["BPLCNM"];
+            addContent.appendChild(hName);
+            hLoc.innerHTML = json["LOCALDATA_020301"]["row"][i]["RDNWHLADDR"];
+            addContent.appendChild(hLoc);
             document.querySelector('#animal-hospital-page').appendChild(addContent);
             count++;
             break;
