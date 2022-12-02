@@ -11,7 +11,7 @@ main {
 }
 
 .title {
-    font-size:  calc(1rem + 1.5vw);
+    font-size: 2rem;
 }
 
 hr {
