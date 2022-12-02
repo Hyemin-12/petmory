@@ -49,6 +49,7 @@ hr {
     flex-wrap: wrap;
     column-gap: 120px;
     row-gap: 40px;
+    margin: 0 30px;
 }
 
 .post-container img { 
@@ -74,6 +75,17 @@ hr {
     margin: 0 auto;
     border: 1px solid #4D4D4D;
     background-color: white;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map {
+    width: 800px;
+    height: 300px;
 }
 
 .bx-x {
@@ -106,4 +118,24 @@ hr {
 /*** ANIMAL HOSPITAL ***/
 #animal-hospital-page {
     display: none;
+}
+
+/*** tablet ***/
+@media screen and (max-width: 1160px) {
+    #pet-show-info {
+        top: -1500px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/*** mobile ***/
+@media screen and (max-width: 756px) {
+    #pet-show-info {
+        top: -2800px;
+        max-width: 700px;
+        height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
