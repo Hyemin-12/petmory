@@ -118,16 +118,33 @@ hr {
 /*** ANIMAL HOSPITAL ***/
 #animal-hospital-page {
     display: none;
+    position: relative;
+    top: -550px;
     margin: 0 30px;
 }
 
 .box {
     width: 100%;
-    height: 300px;
+    height: 200px;
+    background-color: #DAE5D0;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hospital-name {
     font-size: 1.5rem;
+}
+
+.hospital-loc {
+    margin-top: 10px;
+}
+
+.hospital-tel {
+    margin-top: 10px;
 }
 
 /*** tablet ***/
@@ -147,5 +164,9 @@ hr {
         height: 400px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    #animal-hospital-page {
+        top: -350px;
     }
 }
