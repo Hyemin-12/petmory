@@ -3,24 +3,27 @@ html, body {
     margin: 0;
 }
 .myPage-container {
+    height: 100%;
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    margin-top: -53px;
 }
 .myPage-user {
-    width: 450px;
+    width: 500px;
     /* position: absolute;
     top: 15%; */
-    height: 180px;
-    margin-top: 7rem;
+    height: 200px;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 .myPage-user-img {
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     position: relative;
     margin-right: 30px;
@@ -41,7 +44,6 @@ html, body {
     display: flex;
     row-gap: 10px;
     flex-direction: column;
-    cursor: pointer;
 }
 .myPage-user-ni {
     display: flex;
@@ -66,10 +68,33 @@ html, body {
     color: #4D4D4D;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .myPage-edit i {
     font-size: 120%;
 }
 .myPage-edit-p {
     margin-left: 2%;
+}
+.myPage-edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 380px;
+    height: 40px;
+    border: 0.5px solid #4D4D4D;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#editok-button {
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #A0BCC2;
+    color: white;
+    cursor: pointer;
 }
