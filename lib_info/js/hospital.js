@@ -8,7 +8,6 @@ const getNameByAPI = (url) => {
         if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
             // sucess
             // console.log("성공!");
-            console.log(xhr.response);
             show(xhr.response);
         } else {
             // fail
@@ -35,12 +34,12 @@ const show = (jsonString) => {
     var hTel = document.createElement("div");
     hTel.classList.add("hospital-tel");
     for (let i = count; i < 50; i++) {
-        if (json["LOCALDATA_020301"]["row"][i]["TRDSTATENM"] === "영업/정상") {
-            hName.innerHTML = `<i class='bx bx-plus-medical'></i> ${json["LOCALDATA_020301"]["row"][i]["BPLCNM"]}`;
+        if (json["Animalhosptl"][1]["row"][i]["BSN_STATE_NM"] === "정상" && json["Animalhosptl"][1]["row"][i]["LOCPLC_FACLT_TELNO"] != null) {
+            hName.innerHTML = `<i class='bx bx-plus-medical'></i> ${json["Animalhosptl"][1]["row"][i]["BIZPLC_NM"]}`;
             addContent.appendChild(hName);
-            hLoc.innerHTML = `<i class='bx bxs-map'></i> ${json["LOCALDATA_020301"]["row"][i]["RDNWHLADDR"]}`;
+            hLoc.innerHTML = `<i class='bx bxs-map'></i> ${json["Animalhosptl"][1]["row"][i]["REFINE_ROADNM_ADDR"]}`;
             addContent.appendChild(hLoc);
-            hTel.innerHTML = `<i class='bx bxs-phone'></i> ${json["LOCALDATA_020301"]["row"][i]["SITETEL"]}`;
+            hTel.innerHTML = `<i class='bx bxs-phone'></i> ${json["Animalhosptl"][1]["row"][i]["LOCPLC_FACLT_TELNO"]}`;
             addContent.appendChild(hTel);
             document.querySelector('#animal-hospital-page').appendChild(addContent);
             count++;
@@ -51,8 +50,8 @@ const show = (jsonString) => {
     }
 }
 
-const KEY = "4a484c627368796534315173486349";
-const url = `http://openapi.seoul.go.kr:8088/${KEY}/json/LOCALDATA_020301/1/30/`;
+const KEY = "935467f751a8405990b7aa3e5750f7c6";
+const url = `https://openapi.gg.go.kr/Animalhosptl?KEY=${KEY}&Type=json`;
 console.log(url);
 
 window.onscroll = function(e) {
