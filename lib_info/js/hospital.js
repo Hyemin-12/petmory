@@ -32,12 +32,16 @@ const show = (jsonString) => {
     hName.classList.add("hospital-name");
     var hLoc = document.createElement("div");
     hLoc.classList.add("hospital-loc");
-    for (let i = count; i < 30; i++) {
+    var hTel = document.createElement("div");
+    hTel.classList.add("hospital-tel");
+    for (let i = count; i < 50; i++) {
         if (json["LOCALDATA_020301"]["row"][i]["TRDSTATENM"] === "영업/정상") {
-            hName.innerHTML = json["LOCALDATA_020301"]["row"][i]["BPLCNM"];
+            hName.innerHTML = `<i class='bx bx-plus-medical'></i> ${json["LOCALDATA_020301"]["row"][i]["BPLCNM"]}`;
             addContent.appendChild(hName);
-            hLoc.innerHTML = json["LOCALDATA_020301"]["row"][i]["RDNWHLADDR"];
+            hLoc.innerHTML = `<i class='bx bxs-map'></i> ${json["LOCALDATA_020301"]["row"][i]["RDNWHLADDR"]}`;
             addContent.appendChild(hLoc);
+            hTel.innerHTML = `<i class='bx bxs-phone'></i> ${json["LOCALDATA_020301"]["row"][i]["SITETEL"]}`;
+            addContent.appendChild(hTel);
             document.querySelector('#animal-hospital-page').appendChild(addContent);
             count++;
             break;
