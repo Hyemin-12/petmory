@@ -118,6 +118,8 @@ hr {
 /*** ANIMAL HOSPITAL ***/
 #animal-hospital-page {
     display: none;
+    position: relative;
+    top: -550px;
     margin: 0 30px;
 }
 
@@ -162,5 +164,9 @@ hr {
         height: 400px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    #animal-hospital-page {
+        top: -350px;
     }
 }

@@ -47,7 +47,6 @@ const show = (jsonString) => {
             break;
         } else {
             count++;
-            break;
         }
     }
 }
@@ -59,6 +58,7 @@ console.log(url);
 window.onscroll = function(e) {
     if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
         setTimeout(function(){
+            getNameByAPI(url);
             getNameByAPI(url);
         }, 1000)  
     }
