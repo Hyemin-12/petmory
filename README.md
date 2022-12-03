@@ -1,5 +1,7 @@
 # WSM PROJECT: PetMory
 > 2022 2학기 WSM 프로젝트
+<img width="1280" alt="main" src="https://user-images.githubusercontent.com/90095211/205432350-ac0e5411-b74a-4c4a-b33e-972b43696943.png">
+
 ---
 ## 🐾 About PetMory
 'Pet' + 'Memory' 로 반려동물과 쌓은 추억을 기록하기 위한 웹 사이트
