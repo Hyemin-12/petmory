@@ -26,6 +26,11 @@ main {
     cursor: pointer;
 }
 
+.list-button:hover {
+    box-shadow: 0px 3px 5px 0px #cecece;
+    transition: all .35s;
+}
+
 .post-container {
     height: 700px;
     padding: 10px;
